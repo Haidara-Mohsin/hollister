@@ -1,0 +1,9 @@
+<div class="row row-cols-1 row-cols-md-5 g-4 d-flex justify-content-center">
+    <div *ngFor="let product of products">
+        <hollister-cards 
+        img={{product.img}} 
+        name={{product.name}} 
+        [price]='product.price'>Loading...</hollister-cards>
+
+    </div>
+</div>

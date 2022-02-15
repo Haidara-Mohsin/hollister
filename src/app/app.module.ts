@@ -7,6 +7,11 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './navigation/footer/footer.component';
 import { SecondFooterComponent } from './navigation/footer/second.footer.component';
 import { CardComponent } from './Store/cards.component';
+import { AppRoutingModule } from './app-routing.module';
+import { GuysTopsLayout } from './Store/guys-tops-layout';
+import { HomeLayoutComponent } from './Store/home-layout.component';
+import { GirlsTopsLayout } from './Store/girls-tops-layout.component';
+import { GuysBottomsLayout } from './Store/guys-bottoms-layout.component';
 
 @NgModule({
   declarations: [
@@ -15,11 +20,16 @@ import { CardComponent } from './Store/cards.component';
     SecondNavBarComponent,
     FooterComponent,
     SecondFooterComponent,
-    CardComponent
+    CardComponent,
+    GuysTopsLayout,
+    HomeLayoutComponent,
+    GirlsTopsLayout,
+    GuysBottomsLayout
 
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

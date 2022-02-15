@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { mock_product_list } from './Store/mock_product_list';
+import { ProductItemModel } from './Store/product-item-model';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'hollister';
+  
 }
