@@ -1,0 +1,10 @@
+Lab Assignment 5:
+Added 6 card components and a sidebar for each of the three layouts:
+guys tops
+guys bottoms
+girls tops
+
+Created a list for each modified layouts
+used ngFor to generate the card components
+
+Couldn't arrane the cards properly while using ngFor loop to generate the cards
