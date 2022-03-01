@@ -12,6 +12,9 @@ import { GuysTopsLayout } from './Store/guys-tops-layout';
 import { HomeLayoutComponent } from './Store/home-layout.component';
 import { GirlsTopsLayout } from './Store/girls-tops-layout.component';
 import { GuysBottomsLayout } from './Store/guys-bottoms-layout.component';
+import { UserInfoComponent } from './user-info/user-info.component';
+import {HttpClientModule} from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -24,12 +27,14 @@ import { GuysBottomsLayout } from './Store/guys-bottoms-layout.component';
     GuysTopsLayout,
     HomeLayoutComponent,
     GirlsTopsLayout,
-    GuysBottomsLayout
+    GuysBottomsLayout,
+    UserInfoComponent
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

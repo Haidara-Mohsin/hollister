@@ -7,4 +7,9 @@ girls tops
 Created a list for each modified layouts
 used ngFor to generate the card components
 
-Couldn't arrane the cards properly while using ngFor loop to generate the cards
+Couldn't arrange the cards properly while using ngFor loop to generate the cards
+
+Lab assignment 6:
+
+Made the user-info module
+wrote code for sending http requests to the firebase server
