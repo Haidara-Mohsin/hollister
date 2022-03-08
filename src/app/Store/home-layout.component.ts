@@ -1,6 +1,7 @@
 import { Component } from "@angular/core";
 import { mock_product_list } from "./mock_product_list";
 import { ProductItemModel } from "./product-item-model";
+import { StoreService } from "./store.service";
 
 @Component({
     selector: 'hollister-home-layout',
@@ -10,11 +11,20 @@ import { ProductItemModel } from "./product-item-model";
 export class HomeLayoutComponent{
     products: ProductItemModel[] = [];
 
-  constructor(){
-    for(var product of mock_product_list){
-      console.log(product);
-      this.products.push(product);
+    constructor(private homeService:StoreService) {
+    
     }
-  }
+  
+  
+    ngOnInit(): void {
+      this.homeService.gethome().subscribe((data: ProductItemModel []) =>{
+        console.log("Fetching home informations");
+        for(var product of data){
+          console.log(product);
+          this.products.push(product);
+  
+        }
+      }) ;
+    }
 
 }

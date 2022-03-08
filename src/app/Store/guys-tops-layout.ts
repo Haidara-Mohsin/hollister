@@ -1,22 +1,31 @@
-import { Component, Input } from "@angular/core";
-import { guys_tops_list } from "./guys_tops_list";
+import { Component, Input, OnInit } from "@angular/core";
 import { ProductItemModel } from "./product-item-model";
+import { StoreService } from "./store.service";
 
 @Component({
-    selector: 'hollister-guys-tops',
-    templateUrl: 'guys-tops-layout.component.html',
-    styleUrls: ['guys-tops-layout.component.css']
+  selector: 'hollister-guys-tops',
+  templateUrl: 'guys-tops-layout.component.html',
+  styleUrls: ['guys-tops-layout.component.css']
 })
-export class GuysTopsLayout{
+export class GuysTopsLayout implements OnInit {
 
-   products: ProductItemModel[] = [];
+  products: ProductItemModel[] = [];
 
-    constructor(){
-      for(var product of guys_tops_list){
+  constructor(private guystopsService:StoreService) {
+    
+  }
+
+
+  ngOnInit(): void {
+    this.guystopsService.getguysTops().subscribe((data: ProductItemModel []) =>{
+      console.log("Fetching guys tops informations");
+      for(var product of data){
         console.log(product);
         this.products.push(product);
+
       }
-    } 
-    
+    }) ;
+  }
+
 
 }

@@ -13,3 +13,31 @@ Lab assignment 6:
 
 Made the user-info module
 wrote code for sending http requests to the firebase server
+
+Lab Assignment 7:
+
+Main features:
+
+Added file store.service.ts to connect to the backend server and created methods for the following classes:
+    
+    #guys-tops-layout.component.ts
+    #guys-bottoms-layout.component.ts
+    #girls-tops-layout.component.ts
+    #home-layout.component.ts
+
+
+Added the following attributes to the following class:
+    #guys-tops-layout.component.ts
+    
+
+    #Attributes added:
+        -Implemented the ngOnInit method
+        -Removed implementation of lists
+        -Connected the class to the backend server to fetch data from there instead
+        
+
+Bonus Features:
+#Added the same attributes to each of the following classes:
+    #guys-bottoms-layout.component.ts
+    #girls-tops-layout.component.ts
+    #home-layout.component.ts
