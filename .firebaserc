@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "hollister-6d2fe"
+  },
+  "targets": {
+    "hollister-6d2fe": {
+      "hosting": {
+        "hollister": [
+          "hollister-6d2fe"
+        ]
+      }
+    }
+  }
+}

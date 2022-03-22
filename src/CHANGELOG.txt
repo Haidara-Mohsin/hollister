@@ -41,3 +41,15 @@ Bonus Features:
     #guys-bottoms-layout.component.ts
     #girls-tops-layout.component.ts
     #home-layout.component.ts
+
+
+
+Lab Assignment 8:
+
+    #Added Features:
+        -Configued the Angular Fire library
+        -Removed HttpClient dependency
+        -Added AngularFireBase dependency
+        -Modified code to fetched by FireBase dependency instead of HTTPClient
+        -Deployed Website successfully
+    

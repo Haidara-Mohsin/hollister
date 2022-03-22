@@ -14,6 +14,12 @@ import { GirlsTopsLayout } from './Store/girls-tops-layout.component';
 import { GuysBottomsLayout } from './Store/guys-bottoms-layout.component';
 import { UserInfoComponent } from './user-info/user-info.component';
 import {HttpClientModule} from '@angular/common/http';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideDatabase,getDatabase } from '@angular/fire/database';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+
 
 
 @NgModule({
@@ -34,8 +40,10 @@ import {HttpClientModule} from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
-  ],
+    HttpClientModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
