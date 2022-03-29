@@ -37,6 +37,10 @@ export class StoreService {
 
     }
 
+    addGuysTops(product:ProductItemModel) {
+        this.db.list<ProductItemModel>("guys-tops").push(product);
+      }
+
 
 
 }

@@ -19,6 +19,8 @@ import { environment } from '../environments/environment';
 import { provideDatabase,getDatabase } from '@angular/fire/database';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { AddGuysTopsComponent } from './Store/add-guys-tops/add-guys-tops.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -34,7 +36,8 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
     HomeLayoutComponent,
     GirlsTopsLayout,
     GuysBottomsLayout,
-    UserInfoComponent
+    UserInfoComponent,
+    AddGuysTopsComponent
 
   ],
   imports: [
@@ -42,7 +45,8 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
     AppRoutingModule,
     HttpClientModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    FormsModule
     ],
   providers: [],
   bootstrap: [AppComponent]

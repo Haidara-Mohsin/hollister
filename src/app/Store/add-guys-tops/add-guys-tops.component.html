@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            <form #postForm="ngForm" (ngSubmit)="addGuysTops(postForm.value)">
+                <div class="input-group">
+                    <span class="input-group-text">Image Path</span>
+                    <input type="text" class="form-control" ngModel name="img">
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-text">name</span>
+                    <input type="text" class="form-control" ngModel name="name">
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-text">price</span>
+                    <input type="text" class="form-control" required ngModel name="price">
+                </div>
+
+                <button class="btn btn-dark" type="submit" [disabled]="!postForm.valid">
+                    Add Product
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

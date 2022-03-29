@@ -52,4 +52,11 @@ Lab Assignment 8:
         -Added AngularFireBase dependency
         -Modified code to fetched by FireBase dependency instead of HTTPClient
         -Deployed Website successfully
+
+
+Lab Assignment 9:
+
+    #Added Features:
+        -Added the AddGuysTops component which contains the form
+        -Added AddGuysTops method to the store service and connected it to the backend
     
