@@ -59,4 +59,13 @@ Lab Assignment 9:
     #Added Features:
         -Added the AddGuysTops component which contains the form
         -Added AddGuysTops method to the store service and connected it to the backend
+
+Lab Assignment 10:
+
+    #Added Features:
+        -Enabled Firebase authentication
+        -created the authentication component with the form and the authentication service
+        -Created a user using the newly implemented authentication component
+
+
     

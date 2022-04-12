@@ -6,6 +6,7 @@ import { HomeLayoutComponent } from './Store/home-layout.component';
 import { GirlsTopsLayout } from './Store/girls-tops-layout.component';
 import { GuysBottomsLayout } from './Store/guys-bottoms-layout.component';
 import { AddGuysTopsComponent } from './Store/add-guys-tops/add-guys-tops.component';
+import { AuthenticationComponent } from './auth/authentication/authentication.component';
 
 const routes: Routes = [
   {path: '', component: HomeLayoutComponent},
@@ -14,7 +15,8 @@ const routes: Routes = [
 
   {path: 'home', component: HomeLayoutComponent},
   {path: 'girls-tops', component: GirlsTopsLayout},
-  {path: 'admin', component: AddGuysTopsComponent}
+  {path: 'admin', component: AddGuysTopsComponent},
+  {path: 'auth', component: AuthenticationComponent},
 
 ];
 

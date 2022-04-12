@@ -21,6 +21,7 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AddGuysTopsComponent } from './Store/add-guys-tops/add-guys-tops.component';
 import { FormsModule } from '@angular/forms';
+import { AuthenticationComponent } from './auth/authentication/authentication.component';
 
 
 
@@ -37,7 +38,8 @@ import { FormsModule } from '@angular/forms';
     GirlsTopsLayout,
     GuysBottomsLayout,
     UserInfoComponent,
-    AddGuysTopsComponent
+    AddGuysTopsComponent,
+    AuthenticationComponent
 
   ],
   imports: [
