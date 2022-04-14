@@ -22,6 +22,8 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AddGuysTopsComponent } from './Store/add-guys-tops/add-guys-tops.component';
 import { FormsModule } from '@angular/forms';
 import { AuthenticationComponent } from './auth/authentication/authentication.component';
+import { CarouselComponent } from './carousel/carousel.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 
 
@@ -39,7 +41,9 @@ import { AuthenticationComponent } from './auth/authentication/authentication.co
     GuysBottomsLayout,
     UserInfoComponent,
     AddGuysTopsComponent,
-    AuthenticationComponent
+    AuthenticationComponent,
+    CarouselComponent,
+    SidebarComponent
 
   ],
   imports: [

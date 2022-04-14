@@ -67,5 +67,16 @@ Lab Assignment 10:
         -created the authentication component with the form and the authentication service
         -Created a user using the newly implemented authentication component
 
+Bonus Lab Assignment:
+
+    #Added Features:
+        -Fixed Sidebar and added correct text to each of the layouts
+        -Fixed each layout integration the product filter sidebar toview the cards correctly
+        -Used ngFor for all of the card elements in each layout
+        -Added Carousel Item for the home layout
+        -Added hover affects by CSS for the second navbar component
+        -Added correct hover effects for the dropdown items in the second navbar
+        -Applied correct colors to the text and the background for the navbar and for the sidebars
+
 
     
